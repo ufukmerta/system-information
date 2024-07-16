@@ -10,19 +10,19 @@ namespace WFASystemInformation
             InitializeComponent();
         }
 
-        private void clb_Simple_MouseUp(object sender, MouseEventArgs e)
+        private void clb_Detailed_MouseUp(object sender, MouseEventArgs e)
         {
-            if (!clb_Simple.GetItemChecked(4))
+            if (!clb_Detailed.GetItemChecked(4))
             {
-                clb_Simple.SetItemChecked(5, false);
+                clb_Detailed.SetItemChecked(5, false);
             }
         }
 
         private void btn_SelectAll_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < clb_Simple.Items.Count; i++)
+            for (int i = 0; i < clb_Detailed.Items.Count; i++)
             {
-                clb_Simple.SetItemChecked(i, true);
+                clb_Detailed.SetItemChecked(i, true);
             }
         }
     }
