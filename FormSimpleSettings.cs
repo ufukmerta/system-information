@@ -16,5 +16,13 @@ namespace WFASystemInformation
                 clb_Simple.SetItemChecked(5, false);
             }
         }
+
+        private void btn_SelectAll_Click(object sender, System.EventArgs e)
+        {
+            for (int i = 0; i < clb_Simple.Items.Count; i++)
+            {
+                clb_Simple.SetItemChecked(i, true);
+            }
+        }
     }
 }
