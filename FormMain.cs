@@ -469,14 +469,14 @@ namespace WFASystemInformation
                 {
                     continue;
                 }
-                detailedSettings.clb_Simple.Items.Add(mgmtObj.mgmtObject, mgmtObj.mgmtChecked);
+                detailedSettings.clb_Detailed.Items.Add(mgmtObj.mgmtObject, mgmtObj.mgmtChecked);
             }
             detailedSettings.ShowDialog();
             for (int i = 0; i < mgmtObjects.Count(); i++)
             {
                 if (mgmtObjects[i] != null)
                 {
-                    mgmtObjects[i].mgmtChecked = detailedSettings.clb_Simple.GetItemChecked(i);
+                    mgmtObjects[i].mgmtChecked = detailedSettings.clb_Detailed.GetItemChecked(i);
                 }
             }
         }

@@ -41,7 +41,7 @@
             this.rTxt_Information.Name = "rTxt_Information";
             this.rTxt_Information.Size = new System.Drawing.Size(375, 343);
             this.rTxt_Information.TabIndex = 13;
-            this.rTxt_Information.Text = "";
+            this.rTxt_Information.Text = "Get System Information";
             // 
             // btn_Detailed
             // 
